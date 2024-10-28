@@ -13,6 +13,7 @@
     "fix:linux": "tr override --name=WA"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.26.25",
     "@floating-ui/react-dom-interactions": "^0.10.2",
     "@monaco-editor/react": "^4.4.6",
     "@tauri-apps/api": "^1.2.0",
@@ -22,7 +23,8 @@
     "react-dom": "^18.2.0",
     "react-merge-refs": "^2.0.1",
     "react-router-dom": "^6.4.2",
-    "recoil": "^0.7.6"
+    "recoil": "^0.7.6",
+    "tauri-plugin-websocket-api": "github:tauri-apps/tauri-plugin-websocket#v1"
   },
   "devDependencies": {
     "@actions/github": "^5.1.1",
