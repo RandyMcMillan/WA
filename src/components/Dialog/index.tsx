@@ -57,14 +57,6 @@ export const Dialog: FC<DialogProps> = ({
       {cloneElement(children, getReferenceProps({ ref, ...children.props }))}
       <FloatingPortal>
         {open && (
-          <FloatingOverlay
-            lockScroll
-            style={{
-              display: "grid",
-              placeItems: "center",
-              background: "rgba(25, 25, 25, 0.8)"
-            }}
-          >
             <FloatingFocusManager context={context}>
               <div
                 ref={floating}
@@ -80,7 +72,6 @@ export const Dialog: FC<DialogProps> = ({
                 })}
               </div>
             </FloatingFocusManager>
-          </FloatingOverlay>
         )}
       </FloatingPortal>
     </>
